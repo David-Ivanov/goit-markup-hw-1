@@ -1,12 +1,80 @@
-/* main background-color #F5F5F5 */
+/* primary background-color #F5F5F5 */
 /* secondary background-color #F5F4FA; #2F303A */
-/* main and hover color for links and btn #2196F3 */
-/* main color for h  #212121;*/
-/* main color for p  #757575*/ 
+/* primary and hover color for links and btn #2196F3 */
+/* primary color for h and links  #212121;*/
+/* primary color for p  #757575 */ 
+/* logo font  'Raleway'*/
 
+:root {
+    --primary-hover-color: #2196F3;
+    --primary-links-color: #212121;
 
-body {
-    background-color: brown;
 }
 
+body {
+    background-color:#F5F5F5;
+    color: #757575;
 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .03em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #212121;
+}
+
+/* header */
+
+.header {
+    background-color: #FFFFFF;
+}
+
+.logo {
+    color: #000000;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-text {
+    color: #2196F3;
+}
+
+.pagination .link {
+    color: var(--primary-links-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+}
+.pagination .link:hover,
+.info-link:hover,
+.pagination .link:focus,
+.info-link:focus {
+    color: var(--primary-hover-color);
+}
+
+.info-link {
+    color: #757575;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
