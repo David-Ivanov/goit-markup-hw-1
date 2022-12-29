@@ -16,7 +16,7 @@ body {
     color: #757575;
 
     font-family: 'Roboto', sans-serif;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
 }
 
 a {
@@ -107,3 +107,20 @@ h6 {
     text-align: center;
     letter-spacing: 0.06em;
 }
+
+/* list */
+
+.list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    text-transform: uppercase;
+}
+
+.list-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
