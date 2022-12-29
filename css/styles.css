@@ -64,8 +64,8 @@ h6 {
     
 }
 
-.header-tel,
-.header-mail{
+.tel,
+.mail{
     color: #757575;
 
     font-weight: 500;
@@ -75,11 +75,13 @@ h6 {
 }
 
 .header-link:hover,
-.header-mail:hover,
-.header-tel:hover,
+.mail:hover,
+.tel:hover,
+.address:hover,
 .header-link:focus,
-.header-mail:focus, 
-.header-tel:focus {
+.mail:focus, 
+.tel:focus,
+.address:focus {
     color: var(--primary-hover-color);
 }
 
@@ -157,4 +159,18 @@ h6 {
     line-height: 1.18;
 
     text-align: center;
+}
+
+/* footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.address {
+    color: #FFFFFF;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
