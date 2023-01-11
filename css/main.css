@@ -54,9 +54,16 @@ p {
 }
 /* header */
 
+.header > .container{
+    min-height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
 .header {
     background-color: var(--secondary-bg-color);
-
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -69,9 +76,16 @@ p {
     line-height: 1.19;
 
     display: inline-block;
+    margin-right: 93px;
+
 }
 .logo-span {
     color: var(--acent-color);
+}
+
+.header-nav{
+    display: flex;
+    margin-right: 330px;
 }
 
 .header-link {
@@ -81,7 +95,22 @@ p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+
+    padding-top: 100%;
+    padding-bottom: 100%;
+}
+
+.header-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
+
+.info{
+    display: flex;
+}
+
+.info > .item:not(:last-child){
+    margin-right: 50px;
 }
 
 .tel,
@@ -92,6 +121,9 @@ p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    padding-top: 100%;
+    padding-bottom: 100%;
 }
 
 .header-link:hover,
