@@ -2,10 +2,18 @@
     padding: 94px 0; 
 }
 
+/* filter */
+
 .list-nav{
     list-style: none;
 
+    display: flex;
     margin-bottom: 50px;
+    justify-content: center;
+}
+
+.list-nav__item:not(:last-child){
+    margin-right: 8px;
 }
 
 .list-nav__btn {
@@ -31,6 +39,26 @@
     box-shadow: 0px 2px 2px 0px #0000001F, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001A;
 }
 
+/* colection */
+
+.colection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-card:not(:nth-child(3n)){
+    margin-right: var(--primary-gap);
+}
+.portfolio-card:not(:nth-last-child(-n+3)){
+    margin-bottom: var(--primary-gap);
+}
+
+.portfolio-card{
+    border:1px solid #EEEEEE;
+
+    width: calc((100% - 30 * 2) / 3);
+}
+
 .portfolio-title{
     font-weight: 700;
     font-size: 18px;
@@ -38,15 +66,20 @@
 
     letter-spacing: 0.06em;
 
+    margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .portfolio-text{
+    color: #757575;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
 
     letter-spacing: 0.03em;
 
-    color: #757575;
+    margin-bottom: 20px;
+    margin-left: 24px;
 }
