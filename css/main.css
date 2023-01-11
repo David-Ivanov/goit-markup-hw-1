@@ -11,6 +11,7 @@
     --secondary-bg-color: ##F5F5F5;
     --primary-bg-color: #FFFFFF;
     --footer-bg-color: #2F303A;
+    --primary-gap: 30px;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
 
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+
 }
 
 a {
@@ -50,14 +52,11 @@ p {
 .container{
     width: 1200px;
     padding: 0 20px;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 /* header */
 
 .header > .container{
-    min-height: 80px;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     align-items: center;
 }
@@ -96,8 +95,9 @@ p {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    padding-top: 100%;
-    padding-bottom: 100%;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-nav .item:not(:last-child){
@@ -122,8 +122,9 @@ p {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    padding-top: 100%;
-    padding-bottom: 100%;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link:hover,
@@ -148,10 +149,39 @@ p {
     margin-bottom: 20px;
 }
 
-.address {
+.footer-address {
     color: var(--primary-bg-color);
 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.footer-tel,
+.footer-mail{
+    color: #757575;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    display: inline-block;
+}
+
+.footer-mail{
+    margin-bottom: 9px;
+}
+
+.footer-mail:hover,
+.footer-tel:hover,
+.footer-address:hover,
+.footer-header-link:focus,
+.footer-mail:focus,     
+.footer-tel:focus,
+.footer-address:focus {
+    color: var(--acent-color);
 }

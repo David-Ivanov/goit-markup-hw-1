@@ -17,11 +17,12 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    margin-bottom: 30px;
+    margin-bottom: var(--primary-gap);
 }
 
 .hero .hero-btn {
     background-color: var(--acent-color);
+    color: var(--primary-bg-color);
 
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -31,13 +32,23 @@
     text-align: center;
     letter-spacing: 0.06em;
 
-    
+    border: 1px solid transparent;
+
+    padding: 10px 32px;
 }
 
 /* benefits */
 
 .benefits{
     padding: 94px 0;
+}
+
+.benefits .list{
+    display: flex;
+}
+
+.benefits .item:not(:last-child){
+    margin-right: var(--primary-gap);
 }
 
 .benefits-title {
@@ -71,6 +82,14 @@
     margin-bottom: 50px;
 }
 
+.work-list-wrap{
+    display: flex;
+}
+
+.work-list-wrap .item:not(:last-child){
+    margin-right: var(--primary-gap);
+}
+
 /* team */
 
 .team {
@@ -87,12 +106,26 @@
     text-align: center;
 }
 
+.team .list{
+    display: flex;
+}
+
+.card{
+    background: var(--primary-bg-color);
+}
+
+.card:not(:last-child){
+    margin-right: var(--primary-gap);
+}
+
 .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 
     text-align: center;
+
+    margin-top: var(--primary-gap);
 }
 
 .team-text {
@@ -101,5 +134,7 @@
     line-height: 1.18;
 
     text-align: center;
+
+    margin-bottom: var(--primary-gap);
 }
 
