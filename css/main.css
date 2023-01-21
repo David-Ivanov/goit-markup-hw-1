@@ -139,8 +139,26 @@ p {
 }
 
 .icon-mail{
+    fill: currentColor;
+
+    margin-right: 10px;
     width: 16px;
     height: 12px;
+ 
+}
+
+.icon-tel{
+    fill: currentColor;
+
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+}
+.icon-mail:hover,
+.icon-tel:hover,
+.icon-mail:focus,
+.icon-tel:focus{
+    fill: currentColor;
 }
 
 /* footer */
