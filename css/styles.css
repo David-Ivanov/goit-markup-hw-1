@@ -1,9 +1,13 @@
 /* hero */
 
 .hero {
-    background-color: var(--footer-bg-color);
+ background-color: var(--footer-bg-color);
+
+    background-image:url(../images/hero-bg.jpg);
+   
 
     text-align: center;
+    height: 600px;
 }
 
 .hero .hero-title {
@@ -35,6 +39,10 @@
     border: 1px solid transparent;
 
     padding: 10px 32px;
+}
+
+.hero .position{
+padding-top: 200px;
 }
 
 /* benefits */
