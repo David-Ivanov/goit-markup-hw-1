@@ -138,6 +138,11 @@ p {
     color: var(--acent-color);
 }
 
+.icon-mail{
+    width: 16px;
+    height: 12px;
+}
+
 /* footer */
 
 .footer {
