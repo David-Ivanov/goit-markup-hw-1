@@ -84,7 +84,7 @@ p {
 
 .header-nav{
     display: flex;
-    margin-right: 330px;
+    margin-right: 300px;
 }
 
 .header-link {
@@ -140,6 +140,7 @@ p {
 
 .icon-mail{
     fill: currentColor;
+    stroke: currentColor;
 
     margin-right: 10px;
     width: 16px;
@@ -149,6 +150,7 @@ p {
 
 .icon-tel{
     fill: currentColor;
+    stroke: currentColor;
 
     margin-right: 10px;
     width: 10px;
@@ -159,6 +161,7 @@ p {
 .icon-mail:focus,
 .icon-tel:focus{
     fill: currentColor;
+    stroke: currentColor;
 }
 
 /* footer */
