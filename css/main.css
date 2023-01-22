@@ -123,6 +123,7 @@ p {
     letter-spacing: 0.02em;
 
     display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -142,6 +143,7 @@ p {
     fill: currentColor;
     stroke: currentColor;
 
+    vertical-align: middle;
     margin-right: 10px;
     width: 16px;
     height: 12px;
