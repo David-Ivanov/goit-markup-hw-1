@@ -184,7 +184,6 @@ padding-top: 200px;
 
 .socials > .link:hover{
     background-color: var(--acent-color);
-    color: var(--primary-bg-color);
     fill: var(--primary-bg-color);
 }
 
