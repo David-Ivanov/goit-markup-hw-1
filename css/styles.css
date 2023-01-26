@@ -191,20 +191,6 @@ padding-top: 200px;
     margin-right: 10px;
 }
 
-.instagram,
-.linkedin{
-    width: 20px;
-    height: 20px;
-}
-.twitter{
-    width: 20px;
-    height: 16px;
-}
-.facebook{
-    width: 10px;
-    height: 20px;
-}
-
 /* clients */
 .clients{
     padding-top: 94px;
