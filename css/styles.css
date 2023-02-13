@@ -108,12 +108,39 @@ padding-top: 200px;
     margin-bottom: 50px;
 }
 
-.work-list-wrap{
+.work-list-list{
     display: flex;
 }
 
-.work-list-wrap .item:not(:last-child){
+.work-list-list .img{
+    position: relative;
+}
+
+.work-list-list .item:not(:last-child){
     margin-right: var(--primary-gap);
+}
+
+.overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    height: 70px;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--primary-bg-color);
+}
+
+.overlay .text{
+font-size: 14px;
+line-height: 1.14;
+
+text-transform: uppercase;
 }
 
 /* team */
@@ -240,3 +267,52 @@ margin-bottom: 50px;
     height: 60px;
 }
 
+/* modal */
+
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal{
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: end;
+
+
+    background-color: var(--primary-bg-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.modal__btn{
+    width: 30px;
+    height: 30px;
+
+    margin-top: 8px;
+    margin-right: 8px;
+
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
