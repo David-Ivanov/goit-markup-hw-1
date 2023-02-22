@@ -330,9 +330,63 @@
 </div>
     </footer>
 
+    <!-- modal -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal__btn" data-modal-close>x</button>
+            <button class="modal__btn" data-modal-close>
+                <svg class="close-btn">
+                    <use href="images/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+            <form class="form">
+                <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                <lable class="label">
+                    Ім'я
+                    <div class="box-input">
+                    <input type="text" name="username" class="form-input">
+                    <svg class="form-icon">
+                        <use href="./images/symbol-defs.svg#person"></use>
+                    </svg>
+                </div>
+                </lable>
+
+                <lable class="label">
+                    Телефон
+                    <div class="box-input">
+                    <input type="text" name="tel" class="form-input">
+                    <svg class="form-icon">
+                        <use href="./images/symbol-defs.svg#phone"></use>
+                    </svg>
+                </div>
+                </lable>
+
+                <lable class="label">
+                    Пошта
+                    <div class="box-input">
+                    <input type="text" name="mail" class="form-input">
+                    <svg class="form-icon">
+                        <use href="./images/symbol-defs.svg#mail-form"></use>
+                    </svg>
+                </div>
+                </lable>
+
+                <label class="label">
+                    Коментар
+                    <textarea class="comment" name="comment" placeholder="Введіть текст"></textarea>
+                </label>
+
+                <label class="politicy">
+                    <input class="hidden" type="checkbox" name="politicy">
+                    <span class="checkbox">
+                        <svg class="icon-checkbox">
+                            <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+                        </svg>
+                    </span>
+                    Погоджуюся з розсилкою та приймаю  &nbsp; <a class="form-link" href=""> Умови договору</a>
+                </label>
+                <button class="submit-btn" type="submit">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="modal.js"></script>
